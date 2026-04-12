@@ -12,6 +12,8 @@ export async function GET(){
 export async function POST(request: Request){
     const { type, role, level, techstack, amount, userid } = await request.json();
 
+    console.log('🔥 userId being saved:', userid);
+
     try {
         const { text: questions } = await generateText({
             model: groq('llama-3.3-70b-versatile'),

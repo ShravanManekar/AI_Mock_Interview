@@ -7,7 +7,7 @@ import {useRouter} from "next/navigation";
 import { vapi } from '@/lib/vapi.sdk';
 
 enum CallStatus{
-    INACTIVE= 'INACTIVE     ',
+    INACTIVE= 'INACTIVE',
     CONNECTING = 'CONNECTING',
     ACTIVE = 'ACTIVE',
     FINISHED = 'FINISHED',
